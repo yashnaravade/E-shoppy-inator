@@ -1,0 +1,298 @@
+/* 
+.image-hover{
+    width: 100%;
+    height: auto;
+    border: 2px solid gray;
+    border-radius:30px;
+    transition: 0.2s;
+    box-shadow: 5px 2px 2px 5px;
+}
+
+.image-hover:hover{
+    transform: scale(1.1);
+} */
+
+.Heading{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.NavBar-Edit{
+    background-color: rgb(6, 28, 116);
+    color: white;
+}
+
+.nav-color{
+    color: white;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content:right;
+    flex-direction: row;
+}
+.Search-bar{
+    margin-left: 80px;
+}
+.Search-bar input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.button-style{
+    background-color: rgb(20, 20, 92);
+    color: white;
+    border: 1px solid white;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.right-content{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 75px;
+    border: none;
+}
+.content-style{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    margin-top: -55px;
+  
+}
+.content-container{
+    background-color: rgb(11, 9, 32);
+    color: white;
+    cursor: pointer;
+    height: 140px;
+}
+.Slider-Main{
+   
+}
+.Super-sale{
+    color:blueviolet;
+    padding: 10px; 
+    margin: 30px;  
+}
+.Super-sale-text{
+    font-size:50px;
+    margin-left: 35px;
+}
+.Super-sale-description{
+    font-size:25px;
+    margin-left: 35px;
+}
+.Super-sale-button{
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    margin-left: 35px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 8px rgb(29, 17, 41);
+}
+.content-style-myCart{
+    display: flex;
+    justify-content:right;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+}
+.img-Center{
+    height: 80px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius:50%;
+    /* background-color: blueviolet; */
+    border: 3px solid blueviolet;
+}
+.SlideImg-Sizing{
+    height:450px;
+    box-shadow: 0px 0px 8px rgb(35, 11, 57);
+}
+.dashboard-card-menu{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: 0 0 10px rgba(159, 154, 154, 0.5);
+    min-height: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .dashboard-card-menu:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(138, 133, 133, 0.8);
+  }
+  .dashboard-card-icon{
+    font-size:60px;
+    margin:10px;
+    color: gray;
+  }
+  .dashboard-card-title{
+    font-size:25px;
+    font-weight: bold;
+    margin:5px;
+    color:white;
+  }
+  .card-Img{
+    height:170px;
+    width:100%;
+    border-radius:13px;
+
+  }
+  .dashboard-card-1{
+      box-shadow: 0px 0px 8px black;
+      margin-top: 50px;
+      width: 100%;
+      border-radius: 9px;
+      cursor: pointer;
+      transition: 1s;
+  }
+  .dashboard-card-1:hover{
+    transform: scale(1.2);
+  }
+
+  .dashboard-card-number{
+    font-size:20px;
+    font-weight:bold;
+    color: rgb(47, 47, 140); ;
+  }
+
+/* slider  */
+  #app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashboard-cardSlider-1{
+    box-shadow: 0px 4px 8px black;
+      margin-top: 40px;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      cursor: pointer;
+      background-color: rgb(241, 239, 239);
+}
+.dashboard-card-sizing{
+    box-shadow: 0px 0px 8px black;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+  
+}
+.card-Edit{
+    height: 150px;
+    border-radius: 30px;
+}
+.Button-Edit{
+    border: none;
+     color: white;
+    border-radius: 15px;
+}
+.btn-Edit:hover{
+   box-shadow: 0px 0px 8px rgb(29, 17, 41);
+    color: white;
+}
+.rupees-style{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.ImgEditer:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgb(35, 11, 57);; 
+}
+.Img-Editer{
+    height: 200px;
+    width: 100%;
+    margin:20px;
+    box-shadow: 0px 0px 8px black;
+}
+.Img-Editer:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 12px black;
+}
+
+.card-Item:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 12px black;
+}
+.Heading-Top{
+    font-weight: bold;
+    font-size: 30px;
+}
+.card_Editer{
+    background-color: blueviolet;
+}
+.CardSizing-1{
+    border-radius: 20px;
+    width: 100%;
+    height:100px;
+   
+}
+.Deal-Top-Offers{
+    margin-top: 100px;
+}
+.Order-Summary{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+/* slider-Scroller */
