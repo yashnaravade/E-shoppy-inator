@@ -15,9 +15,9 @@
 .card-title{
     font-size: 30px;
     font-weight: bold;
-/*     
+    
     text-shadow: 0 0  10px black;
-    font-family: 'gloria Hallelujah', cursive; */
+    font-family: 'gloria Hallelujah', cursive;
 }
 .add_plant{
     border-radius: 50px;
@@ -42,4 +42,3 @@ background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)
     color: white;
     text-shadow: 0 0  10px black;
 }
-

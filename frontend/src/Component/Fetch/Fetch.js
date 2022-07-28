@@ -32,7 +32,7 @@ export default function Fetch() {
        <hr/>
        <div className='row'>
          {
-           mobile.map(mobiles =><Showmobile id={mobiles.id} mobile_name={mobiles.mobile_name} mobile_description={mobiles.mobile_description}
+           mobile.map(mobiles =><Showmobile id={mobiles.id} mobile_Name={mobiles.mobile_Name} mobile_description={mobiles.mobile_description}
            mobile_url={mobiles.mobile_url} mobile_prize={mobiles.mobile_prize} mobile_quantity={mobiles.mobile_quantity} />)
          }
          </div>

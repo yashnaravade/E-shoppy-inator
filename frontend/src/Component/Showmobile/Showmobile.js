@@ -47,7 +47,7 @@ export default function Showmobile(props) {
       <card className='card1'>
       <img src={props.mobile_url} className='img-sizing mt-5' alt='plantimg' /><br/>
             <span >ID :{props.id}</span> <br/>
-            <span>MOBILE_NAME :{props.mobile_name}</span> <br/>
+            <span>MOBILE_NAME :{props.mobile_Name}</span> <br/>
             <span> MOBILE_DESCRIPTION :{props.mobile_description}</span> <br/>
             <span>MOBILE_PRIZE :{props.mobile_prize}</span> <br/>
             <span>MOBILE_QUANTITY :{props.mobile_quantity}</span> 

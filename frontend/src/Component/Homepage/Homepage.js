@@ -129,6 +129,17 @@ export default function Homepage() {
           <li><Link className="nav-link" to="/mobile"><span className='nav-color'>Add Mobile📱</span></Link> </li>
         </li>
 
+        <li className="nav-item">
+          {/* <a className="nav-link" href="#"><span className='nav-color'>signup</span></a> */}
+          <li><Link className="nav-link" to="/book"><span className='nav-color'>Add Book 📚</span></Link> </li>
+        </li>
+
+        
+        <li className="nav-item">
+          {/* <a className="nav-link" href="#"><span className='nav-color'>signup</span></a> */}
+          <li><Link className="nav-link" to="/sport"><span className='nav-color'>Add Sport 🏐</span></Link> </li>
+        </li>
+
        
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -183,6 +194,20 @@ export default function Homepage() {
 
             <p className="mt-2">
               <div className="row">
+               <Link to="/fetchbook"> <img className="img-Center" src={books} /> </Link>
+              </div>
+              <span className="row ms-4">Books</span>
+            </p>
+
+            <p className="mt-2">
+              <div className="row">
+                <Link to="/fetchsport"><img className="img-Center" src={sport} /></Link>
+              </div>
+              <span className="row ms-4">Sports</span>
+            </p>
+
+            <p className="mt-2">
+              <div className="row">
                 <img className="img-Center " src={fasion} />
               </div>
               <span className="row ms-3">Fasion</span>
@@ -204,18 +229,6 @@ export default function Homepage() {
                 <img className="img-Center" src={furniture} />
               </div>
               <span className="row ms-3">Furniture</span>
-            </p>
-            <p className="mt-2">
-              <div className="row">
-                <img className="img-Center" src={books} />
-              </div>
-              <span className="row ms-4">Books</span>
-            </p>
-            <p className="mt-2">
-              <div className="row">
-                <img className="img-Center" src={sport} />
-              </div>
-              <span className="row ms-4">Sports</span>
             </p>
             <p className="mt-2">
               <div className="row">
