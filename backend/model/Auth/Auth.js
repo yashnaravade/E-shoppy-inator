@@ -7,5 +7,5 @@ const Auth = new mongoose.Schema({
     mobile:Number
 });
 
-const model = mongoose.model('users', Auth) // stucture
+const model = mongoose.model('auth', Auth) // stucture
 module.exports = model;

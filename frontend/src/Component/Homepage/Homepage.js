@@ -105,6 +105,8 @@ import "swiper/css/navigation";
 // import required modules
 import { EffectFlip, Pagination, Navigation } from "swiper";
 
+import {Link,useNavigate} from 'react-router-dom';
+
 export default function Homepage() {
   return (
     <div>
@@ -120,9 +122,7 @@ export default function Homepage() {
         <li className="nav-item nav-color">
           <a className="nav-link active" aria-current="page" href="#"><span className='nav-color'>Home</span></a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#"><span className='nav-color'>Link</span></a>
-        </li>
+       
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <span className='nav-color'> Dropdown</span>
@@ -137,6 +137,21 @@ export default function Homepage() {
         <li className="nav-item">
           <a className="nav-link disabled"><span className='nav-color'><span className='nav-color'>Disabled</span></span></a>
         </li>
+
+        <li className="nav-item">
+          {/* <a className="nav-link" href="#"><span className='nav-color'>signup</span></a> */}
+          <li><Link className="nav-link" to="/register"><span className='nav-color'>Signup</span></Link> </li>
+        </li>
+
+        <li className="nav-item">
+        {/* <Link><a className="nav-link" href="#"><span className='nav-color'>Login</span></a></Link> */}
+        <li><Link className="nav-link" to="/login"><span className='nav-color'>Login</span></Link> </li>
+        </li>
+
+        <li className="nav-item">
+        {/* <Link><a className="nav-link" href="#"><span className='nav-color'>Login</span></a></Link> */}
+        <li><Link className="nav-link" to="/logout"><span className='nav-color'>Logout</span></Link> </li>
+        </li>
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -150,12 +165,15 @@ export default function Homepage() {
       <div className="content-container mt-5">
         <div className="container">
           <div className="content-style">
+
             <p className="mt-2">
               <div className="row">
-                <img className="img-Center " src={mobile} />
+               <Link to ="/mobile"><img className="img-Center " src={mobile} /></Link> 
               </div>
               <span className="row ms-3">Mobile</span>
+             {/* <Link to="/mobile"><span className="row ms-3">Mobile</span></Link> */}
             </p>
+
             <p className="mt-2">
               <div className="row">
                 <img className="img-Center " src={fasion} />

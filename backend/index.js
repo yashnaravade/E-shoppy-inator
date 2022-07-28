@@ -40,12 +40,24 @@ app.post('/login',async(req,res)=>{
     email : req.body.email,
     password : req.body.password
   })
-
   await auth.save();
   res.send({
     message:"Login successfully"
   })
 })
+
+app.get('/mobile', (req, res) => {
+  res.json({
+    success: true,
+  });
+})
+
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+  });
+})
+
 
 // app.post('/signup',async(req,res) => {
 
