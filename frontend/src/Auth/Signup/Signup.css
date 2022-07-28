@@ -1,0 +1,23 @@
+.inputBox{
+    margin: auto;
+    display: block;
+    margin: 25px;
+    padding: 7px;
+    width: 300px;
+    border: 2px solid blueviolet;
+  }
+/* 
+  .register{
+    margin-left: 150%;
+  } */
+
+  .fav{
+    margin: 25px;
+    padding: 10px;
+    width: 150px;
+    margin-right: 300px;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid;
+    cursor: pointer;
+  }

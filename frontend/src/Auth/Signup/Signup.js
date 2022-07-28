@@ -1,7 +1,58 @@
-import React from 'react'
+import React, { useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 import login_img from "./img/login_img.png"
+import './Signup.css';
 
-function Signup() {
+
+
+
+// const Signup  = async ()=>{
+//     console.warn(name,email,password,mobile)
+//     let result = await fetch('http://localhost:5000/register',{
+//         method:'post',
+//         body:JSON.stringify({name,email,password,mobile}),
+//         headers:{
+//             'Content-Type':'application/json'
+//         },
+//     })
+
+    // result = await result.json()
+    // console.warn(result);
+
+   const Signup = () => {
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [mobile, setMobile] = useState("");
+
+    const navigate = useNavigate();
+
+    
+    // useEffect(()=>{
+    //     const user = localStorage.getItem('auth');
+    //     if(user)
+    //     {
+    //         navigate('/')
+    //     }
+    // })
+
+    const collectData = async () => {
+        console.warn(name, email, password, mobile)
+        let result = await fetch('http://localhost:5000/register', {
+            method: 'post',
+            body: JSON.stringify({ name, email, password, mobile }),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+
+        result = await result.json()
+        console.warn(result);
+        localStorage.setItem("auth", JSON.stringify(result));
+        
+        navigate("/")
+    }
+
     return (
         <div>
             <div className='container'>
@@ -9,29 +60,26 @@ function Signup() {
                     <div className='col-md-6'>
                         <h1 className='text-center'>Signup Form</h1>
                         <form>
-                            <div className="mb-3">
-                            <label for="exampleInputName" className="form-label">Enter Name</label>
-                                <input type="username" className="form-control" id="exampleInputName" aria-describedby="Username"></input>
-                                <label for="exampleInputNumber" className="form-label">Enter Mobile Number</label>
-                                <input type="number" className="form-control" id="exampleInputNumber" aria-describedby="Number"></input>
-                                <label for="exampleInputEmail1" className="form-label">Email address</label>
-                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-                                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                            <div className="register mt-5 mb-3">
+                                <input className="inputBox" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter Name " />
+                                <input className="inputBox" type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Email" />
+                                <input className="inputBox" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter Password " />
+                                <input className="inputBox" type="text" value={mobile} onChange={(e) => setMobile(e.target.value)} placeholder="Enter Mobile " />
+                                {/* <button onClick={collectData} className="fav" type="button">Sign Up</button> */}
+                                <button onClick={collectData} className="fav " type="submit">signup</button>
                             </div>
-                            <div className="mb-3">
-                                <label for="exampleInputPassword1" className="form-label">Password</label>
-                                <input type="password" className="form-control" id="exampleInputPassword1"></input>
-                            </div>
-                            
-                            <button type="submit" className="btn btn-primary w-100">Signup</button>
                         </form>
-                    </div>
-                    <div className='col-md-6'>
-                        <img className='login-img' src={login_img}></img>
+                        </div>
+
+                        <div className='col-md-6'>
+                            <img className='login-img' src={login_img}></img>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
-        </div>
+       
 
     )
 }
