@@ -120,8 +120,15 @@ export default function Homepage() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item nav-color">
-          <a className="nav-link active" aria-current="page" href="#"><span className='nav-color'>Home</span></a>
+          {/* <a className="nav-link active" aria-current="page" href="#"><span className='nav-color'>Home</span></a> */}
+          <li><Link className="nav-link" to="/"><span className='nav-color'>Home</span></Link> </li>
         </li>
+
+        <li className="nav-item">
+          {/* <a className="nav-link" href="#"><span className='nav-color'>signup</span></a> */}
+          <li><Link className="nav-link" to="/mobile"><span className='nav-color'>Add Mobile📱</span></Link> </li>
+        </li>
+
        
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -168,7 +175,7 @@ export default function Homepage() {
 
             <p className="mt-2">
               <div className="row">
-               <Link to ="/mobile"><img className="img-Center " src={mobile} /></Link> 
+               <Link to ="/fetch"><img className="img-Center " src={mobile} /></Link> 
               </div>
               <span className="row ms-3">Mobile</span>
              {/* <Link to="/mobile"><span className="row ms-3">Mobile</span></Link> */}

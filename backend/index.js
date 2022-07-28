@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Auth = require("./model/Auth/Auth");
+const Mobile = require("./model/Mobile")
 const cors = require('cors');
 
 const PORT = 5000;
@@ -46,11 +47,27 @@ app.post('/login',async(req,res)=>{
   })
 })
 
-app.get('/mobile', (req, res) => {
-  res.json({
-    success: true,
+
+app.post('/mobile', async (req, res) => {
+  const mobile = new Mobile({
+      id: req.body.id,
+      mobile_Name: req.body.mobile_Name,
+      mobile_description: req.body.mobile_description,
+      mobile_url: req.body.mobile_url,
+      mobile_prize: req.body.mobile_prize,
+      mobile_quantity: req.body.mobile_quantity
   });
-})
+  await mobile.save();
+  res.send({
+      message:"mobile Info  Added Successfully"
+  })
+});
+
+app.get('/mobile', async (req, res) => {
+  const mobile = await Mobile.find();
+  res.send(mobile);
+});
+
 
 app.get('/', (req, res) => {
   res.json({
