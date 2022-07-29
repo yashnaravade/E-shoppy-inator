@@ -74,7 +74,7 @@ export default function Book() {
     <div className='container'>
         <div className='row'>
             <div className='col-md-6 mt-3'>
-               <img src={book}/>
+               <img src={book}></img>
             </div>
             <div className='col-md-6'>
             <div className='mt-2'>
