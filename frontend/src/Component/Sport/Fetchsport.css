@@ -1,0 +1,21 @@
+.card-title{
+    font-size: 30px;
+    color:black;
+}
+
+.button_plant{
+   
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    width: 200px;
+}
+.btnplant{
+    text-decoration: none;
+    color: white;
+}
+
+.abc{
+    background-color: aliceblue;
+}
