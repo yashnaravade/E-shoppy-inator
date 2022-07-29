@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const Mobile = mongoose.Schema({
-    id: {type: 'number'},
+    // id: {type: 'number'},
     mobile_Name : {type : 'string'},
     mobile_description:{type: 'string'},
     mobile_url:{type: 'string'},

@@ -46,11 +46,13 @@ export default function Showmobile(props) {
    <div className='card'>
       <card className='card1'>
       <img src={props.mobile_url} className='img-sizing mt-5' alt='plantimg' /><br/>
-            <span >ID :{props.id}</span> <br/>
-            <span>MOBILE_NAME :{props.mobile_Name}</span> <br/>
-            <span> MOBILE_DESCRIPTION :{props.mobile_description}</span> <br/>
-            <span>MOBILE_PRIZE :{props.mobile_prize}</span> <br/>
-            <span>MOBILE_QUANTITY :{props.mobile_quantity}</span> 
+            {/* <span >ID :{props.id}</span> <br/> */}
+            <h3>{props.mobile_Name}</h3> <br/>
+            <span><i class="fa-solid fa-person-chalkboard"></i>  :{props.mobile_description}</span> <br/>
+            <span className='quantity mt-2'><b> Quantity</b>   :{props.mobile_quantity}</span> <br/>
+           <b>Rating:</b><span className='rating mb-3'> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><br/>
+           <b><span className='mt-3 prize'><i class="fa-solid fa-indian-rupee-sign"></i>  :{props.mobile_prize}</span></b>  <br/>
+            <button class="card-btn mb-3 mb-3 mt-3"> <i class="fa-solid fa-cart-shopping"></i> Add to Card !!</button>
       </card>
   </div>
   </div>

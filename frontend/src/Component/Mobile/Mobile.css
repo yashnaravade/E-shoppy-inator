@@ -6,7 +6,7 @@
     border-radius: 20px;
     box-shadow: 0 0  10px black;
     transition: 0.2s;
-    background-color: #00E0c6;
+    background-color: white;
 }
 .img:hover{
     box-shadow: 0 0  22px black;

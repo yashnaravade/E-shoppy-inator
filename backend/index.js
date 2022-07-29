@@ -58,7 +58,7 @@ app.post('/login',async(req,res)=>{
 
 app.post('/mobile', async (req, res) => {
   const mobile = new Mobile({
-      id: req.body.id,
+      // id: req.body.id,
       mobile_Name: req.body.mobile_Name,
       mobile_description: req.body.mobile_description,
       mobile_url: req.body.mobile_url,
